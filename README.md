@@ -87,8 +87,7 @@ dgt2823-trabalho-pratico-big-data/
 │   ├── dados_tratados.csv         # Saída pronta, também recriada na execução
 │   └── relatorio_execucao.txt     # Relatório pronto, também recriado na execução
 ├── docs/
-│   ├── RELATORIO_TECNICO.md      # Explicação das etapas e observações
-│   └── relatorio_tecnico.pdf     # Relatório formatado para leitura
+│   └── RELATORIO_TECNICO.md      # Relatório técnico em Markdown
 ├── tests/
 │   └── test_tratamento.py         # Testes automatizados
 ├── .github/workflows/testes.yml  # Pipeline de testes no GitHub
@@ -107,7 +106,7 @@ dgt2823-trabalho-pratico-big-data/
 | Microatividade 4: `head(10)` e `tail(10)` | Notebook, seção 4 |
 | Microatividade 5: `info()`, nulos, tipos e memória | Notebook, seção 5; `resumo_dataframe()` |
 | Trabalho Prático, passos 1 a 13 | Notebook, seção 6; `tratar_dados()`; `main.py` |
-| Entrega por repositório Git público | Arquivos prontos para publicação e GitHub Actions |
+| Entrega por repositório Git público | Repositório público publicado e GitHub Actions |
 
 ## Informações importantes sobre a fonte
 
@@ -117,22 +116,12 @@ O enunciado também diz que a data temporária `1900/01/01` causaria erro de con
 
 Outras ocorrências, como `Duration=450` (ID 7), data repetida (IDs 11 e 12) e `Pulse > Maxpulse` (ID 23), **foram preservadas** porque sua modificação não é exigida no trabalho.
 
-## Como publicar para o tutor no GitHub
+## Repositório público para a entrega
 
-O roteiro pede um **repositório público**. A publicação depende do seu acesso ao GitHub e não é feita automaticamente pelo ZIP.
+O projeto já está publicado na conta GitHub do aluno:
 
-1. Crie um novo repositório **público**, por exemplo `dgt2823-trabalho-pratico-big-data`, no seu GitHub (não marque a criação automática de README, pois este projeto já contém um).
-2. Na pasta do projeto, execute:
+**https://github.com/viniciusEduardo17/dgt2823-trabalho-pratico-big-datag**
 
-```bash
-git init
-git add .
-git commit -m "Entrega do trabalho pratico DGT2823"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/dgt2823-trabalho-pratico-big-data.git
-git push -u origin main
-```
-
-3. Troque `SEU_USUARIO` pelo seu nome de usuário no GitHub e compartilhe com o tutor a URL real do repositório.
+Compartilhe esse endereço com o tutor na Sala de Aula Virtual, na aba Trabalhos.
 
 > O projeto não requer Docker, banco de dados ou conexão à internet para executar após a instalação das dependências.

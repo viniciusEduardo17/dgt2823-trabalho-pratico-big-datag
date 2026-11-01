@@ -1,0 +1,20 @@
+name: Testes do projeto
+on:
+  push:
+  pull_request:
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter código
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependências de execução e testes
+        run: python -m pip install 'pandas>=2,<3' 'pytest>=8,<10'
+      - name: Executar testes
+        run: python -m pytest -q
+      - name: Executar o trabalho prático
+        run: python main.py --resumido

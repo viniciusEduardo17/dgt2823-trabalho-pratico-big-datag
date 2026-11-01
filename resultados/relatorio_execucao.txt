@@ -1,0 +1,26 @@
+DGT2823 - TRABALHO PRÁTICO - RELATÓRIO DE EXECUÇÃO
+========================================================
+
+BASE ORIGINAL
+Registros: 32 | Colunas: 6
+Calories ausentes: 2
+Date ausentes: 1
+
+TRANSFORMAÇÕES
+Calorias ausentes substituídas por 0: 2
+Datas temporariamente preenchidas com 1900/01/01: 1
+Datas irregulares 20201226 corrigidas: 1
+Registros excluídos por data ausente: 1
+IDs excluídos: [22]
+
+BASE TRATADA
+Registros: 31 | Colunas: 6
+Nulos totais: 0
+Tipo de Date: datetime64[ns]
+Tipo de Calories: int64
+
+OBSERVAÇÕES DE FIDELIDADE AO ENUNCIADO
+- Aspas simples das datas são removidas antes do to_datetime.
+- 1900/01/01 é válido sintaticamente, mas removido por instrução da atividade.
+- ID 21 foi recomposto de uma quebra visual de linha no PDF.
+- Duração 450 (ID 7), duplicidade (ID 11/12) e Pulse>Maxpulse (ID 23) foram preservados, pois o roteiro não autoriza sua correção.
